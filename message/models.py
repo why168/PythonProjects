@@ -14,6 +14,9 @@ class UserMessage(models.Model):
     address = models.CharField(max_length=100, verbose_name=u"联系地址")
     message = models.CharField(max_length=500, verbose_name=u"留言信息")
 
+    def __str__(self):
+        return '(UserMessage: %s, %s, %s, %s, %s)' % (self.object_id, self.name, self.email, self.address, self.message)
+
     class Meta:
         verbose_name = u"用户留言信息"
         verbose_name_plural = verbose_name  # 复数信息

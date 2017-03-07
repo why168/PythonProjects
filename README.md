@@ -70,7 +70,7 @@ pip install mysql-python  驱动安装
 ```
 
 
-###jango 运行
+###django 运行
 
 ```
 startapps message 创建app
