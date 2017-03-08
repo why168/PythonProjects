@@ -19,6 +19,7 @@ from message.views import getform
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'form/$', getform)
+    url(r'form/$', getform, name='go_form'),
+    url(r'formtest', admin.site.urls)
 
 ]

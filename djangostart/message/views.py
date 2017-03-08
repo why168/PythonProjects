@@ -10,13 +10,16 @@ from models import UserMessage
 # Create your views here.
 
 def getform(request):
-    all_messages = UserMessage.objects.all().filter(address='日本')
+    message = None
+    all_messages = UserMessage.objects.all().filter(address='成都')
+    if all_messages:
+        message = all_messages[0]
 
     # all_messages.delete()
 
-    for message in all_messages:
-        message.delete()
-        print message.__str__()
+    # for message in all_messages:
+    #     message.delete()
+    #     print message.__str__()
 
     # 表单提交
     # if request.method == 'POST':
@@ -32,4 +35,7 @@ def getform(request):
     #     user_message.object_id = "3"
     #     user_message.save()
 
-    return render(request, 'message_form.html')
+    # return render(request, 'message_form.html')
+    return render(request, 'message_form.html',{
+        'my_message':message
+    })

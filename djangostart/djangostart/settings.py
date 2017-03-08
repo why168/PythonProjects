@@ -121,7 +121,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = 'static'  # 静态文件的物理路径
+# STATIC_ROOT = 'static'  # 静态文件的物理路径
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')

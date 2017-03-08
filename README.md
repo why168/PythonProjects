@@ -39,9 +39,9 @@ deactivate
 	source /usr/local/bin/virtualenvwrapper.sh
 
 mkvirtualenv env1 创建虚拟环境env1
-worken  查看虚拟环境
+workon  查看虚拟环境
 lsvirtualenv -b  查看虚拟环境
-worken xxx 进入xxx虚拟环境
+workon xxx 进入xxx虚拟环境
 rmvirtualenv xxx 删除xxx虚拟环境
 lssitepackages 查看环境里安装了哪些包
 
