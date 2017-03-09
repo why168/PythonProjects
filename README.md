@@ -12,11 +12,11 @@ study python server django
 
 # Python开发记录
 
-###Mac OS中创建虚拟环境virtualenv
+###Mac OS中创建虚拟环境virtualenv和virtualenvwrapper
 
 ```
 sudo pip install virtualenv
-
+sudo pip install virtualenvwrapper
 
 virtualenv testvir
 
@@ -55,6 +55,9 @@ pip install django==1.9.8 安装django1.9.8
 ###MySql数据操作
 
 ```
+http://www.lfd.uci.edu/~gohlke/pythonlibs/#mysql-python 驱动下载
+
+
 https://dev.mysql.com/downloads/mysql/
 
 http://www.jianshu.com/p/fd3aae701db9

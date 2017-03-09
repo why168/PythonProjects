@@ -11,7 +11,7 @@ from models import UserMessage
 
 def getform(request):
     message = None
-    all_messages = UserMessage.objects.all().filter(address='成都')
+    all_messages = UserMessage.objects.all().filter(address='北京')
     if all_messages:
         message = all_messages[0]
 
@@ -35,7 +35,14 @@ def getform(request):
     #     user_message.object_id = "3"
     #     user_message.save()
 
+
+    print message.object_id
+    print message.name
+    print message.message
+    print message.address
+    print message.email
+
     # return render(request, 'message_form.html')
-    return render(request, 'message_form.html',{
-        'my_message':message
+    return render(request, 'message_form.html', {
+        'my_message': message
     })
