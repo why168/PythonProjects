@@ -36,11 +36,11 @@ def getform(request):
     #     user_message.save()
 
 
-    print message.object_id
-    print message.name
-    print message.message
-    print message.address
-    print message.email
+    # print message.object_id
+    # print message.name
+    # print message.message
+    # print message.address
+    # print message.email
 
     # return render(request, 'message_form.html')
     return render(request, 'message_form.html', {
