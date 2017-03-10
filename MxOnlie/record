@@ -1,1 +1,23 @@
-UserProfile
+APP
+    users
+        UserProfile 用户配置文件
+        EmailVerityRecord 邮件的真实记录
+        Banner 轮播图
+
+    courses
+        Course 课程
+        Lesson 章节信息
+        Video  视频播放地址
+        CourseResource 资源
+
+    organization
+        CourseOrg 课程机构基本信息
+        Teacher 教师基本信息
+        CityDict 城市信息
+
+    operation
+        UserAsk 用户咨询
+        CourseComments 用户课程评论
+        UserFavorite 用户收藏
+        UserMessage 用户消息
+        UserCourse 用户学习的课程
