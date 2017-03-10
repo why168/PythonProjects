@@ -1,5 +1,11 @@
 http://www.xadmin.io
 
+模板：
+# -*- coding:utf-8 -*-
+__author__='Edwin.Wu'
+__date__ = '$DATE $TIME'
+
+
 
 APP
     users
@@ -24,3 +30,4 @@ APP
         UserFavorite 用户收藏
         UserMessage 用户消息
         UserCourse 用户学习的课程
+
