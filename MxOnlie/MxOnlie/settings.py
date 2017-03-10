@@ -1,3 +1,4 @@
+# _*_ encoding:utf-8 _*_
 """
 Django settings for MxOnlie project.
 
@@ -40,7 +41,9 @@ INSTALLED_APPS = [
     'users',
     'courses',
     'operation',
-    'organization'
+    'organization',
+    'xadmin',
+    'crispy_forms'
 ]
 
 AUTH_USER_MODEL = 'users.UserProfile'
@@ -110,15 +113,15 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'zh-hans'  # en-us
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Shanghai'  # UTC
 
 USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False  # 改成Fasle存数据库使用本地时间
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
