@@ -14,7 +14,7 @@ class Migration(migrations.Migration):
     operations = [
         migrations.AlterField(
             model_name='log',
-            name='action_flag',
+            name='a ction_flag',
             field=models.CharField(max_length=32, verbose_name='action flag'),
         ),
     ]
