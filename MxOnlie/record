@@ -31,3 +31,11 @@ APP
         UserMessage 用户消息
         UserCourse 用户学习的课程
 
+
+------------------------------------------------------
+
+
+django 关键字
+    list_display 列表显示
+    search_fields 搜索查询
+    list_filter  筛选查询
