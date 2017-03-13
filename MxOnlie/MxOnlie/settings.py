@@ -128,3 +128,7 @@ USE_TZ = False  # 改成Fasle存数据库使用本地时间
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+]
