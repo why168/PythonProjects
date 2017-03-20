@@ -34,20 +34,22 @@ class LoginView(View):
             if user is not None:
                 login(request, user)
                 return render(request, 'index.html')
+            else:
+                return render(request, 'login.html', {'msg': u'用户名或密码错误!'})
         else:
-            return render(request, 'login.html', {'msg': u'用户名或密码错误!'})
+            return render(request, 'login.html', {'login_form': login_form})
 
-# def user_login(request):
-#     if request.method == 'POST':
-#         user_name = request.POST.get('username', "")
-#         pass_word = request.POST.get('password', "")
-#         print 'user_name = ', user_name, '\n', 'pass_word = ', pass_word
-#         user = authenticate(username=user_name, password=pass_word)
-#         if user is not None:
-#             login(request, user)
-#             return render(request, 'index.html')
-#         else:
-#             return render(request, 'login.html', {'msg': u'用户名或密码错误!'})
-#         pass
-#     elif request.method == 'GET':
-#         return render(request, 'login.html', {})
+            # def user_login(request):
+            #     if request.method == 'POST':
+            #         user_name = request.POST.get('username', "")
+            #         pass_word = request.POST.get('password', "")
+            #         print 'user_name = ', user_name, '\n', 'pass_word = ', pass_word
+            #         user = authenticate(username=user_name, password=pass_word)
+            #         if user is not None:
+            #             login(request, user)
+            #             return render(request, 'index.html')
+            #         else:
+            #             return render(request, 'login.html', {'msg': u'用户名或密码错误!'})
+            #         pass
+            #     elif request.method == 'GET':
+            #         return render(request, 'login.html', {})
